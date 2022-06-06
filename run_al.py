@@ -586,9 +586,9 @@ class Percentable(object):
             percentable_string = percentable_string[:-1]
 
         try:
-            percentable_string = float(percentable_string)
+            percentable_string = int(percentable_string)
         except ValueError:
-            print(f"{percentable_string} is not a valid float.")
+            print(f"{percentable_string} is not a valid integer.")
 
         return percentable_string, is_percentage
 
